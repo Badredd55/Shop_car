@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About Us - Vente de Voitures</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>À Propos - AutoLux</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    :root {
+      --primary-blue: hwb(218 27% 8%);
+      --secondary-blue: #04befe;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    
+    .about-hero {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+      color: white;
+      padding: 5rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .about-hero h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .about-hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .section-title {
+      position: relative;
+      margin-bottom: 2.5rem;
+      color: var(--primary-blue);
+    }
+    
+    .section-title:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
+    }
+    
+    .about-content {
+      padding: 5rem 0;
+    }
+    
+    .story-card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 3rem;
+    }
+    
+    .story-img {
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .values-section {
+      background: #f8f9fa;
+      padding: 5rem 0;
+    }
+    
+    .value-card {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin-bottom: 2rem;
+    }
+    
+    .value-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(4, 190, 254, 0.2);
+    }
+    
+    .value-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary-blue);
+    }
+    
+    .team-section {
+      padding: 5rem 0;
+    }
+    
+    .team-member {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .team-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+    
+    .stats-section {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .btn-about {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+    
+    .btn-about:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(4, 190, 254, 0.4);
+      color: white;
+    }
+    
+    @media (max-width: 768px) {
+      .about-hero {
+        padding: 3rem 0;
+      }
+      
+      .about-hero h1 {
+        font-size: 2rem;
+      }
+      
+      .about-content, .values-section, .team-section {
+        padding: 3rem 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-image: linear-gradient(-45deg, hwb(218 27% 8%) 0%, #04befe 100%); box-shadow: 0 4px 20px rgba(4, 190, 254, 0.3);">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://images.icon-icons.com/577/PNG/96/ExecutiveCar_Black_icon-icons.com_54904.png" width="40" height="40" class="d-inline-block align-top mr-2" alt="Car Logo">
+      AutoLux
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link px-3 py-2 mx-1 rounded" href="./index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 mx-1 rounded" href="./catalogue.html">Catalogue</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 mx-1 rounded" href="./contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 mx-1 rounded" href="./signup.html">Sign Up</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link px-3 py-2 mx-1 rounded" href="./about.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Contenu de la page About Us -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>Notre Passion pour l'Automobile</h1>
+      <p class="lead">Depuis 2010, AutoLux redéfinit l'expérience d'achat de véhicules haut de gamme</p>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="about-content">
+    <div class="container">
+      <div class="row align-items-center story-card">
+        <div class="col-lg-6 p-0">
+          <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Notre histoire" class="img-fluid story-img">
+        </div>
+        <div class="col-lg-6 p-5">
+          <h2 class="section-title">Notre Histoire</h2>
+          <p>Fondée en 2010 par Badr Elhouari, AutoLux est née d'une passion partagée pour les véhicules d'exception. Ce qui a commencé comme un petit showroom à Paris est rapidement devenu une référence dans le monde des voitures de luxe.</p>
+          <p>Notre philosophie est simple : offrir à chaque client une expérience personnalisée et transparente, en mettant à disposition une sélection rigoureuse des plus belles automobiles du marché.</p>
+          <a href="./catalogue.html" class="btn btn-about mt-3">Découvrir notre catalogue</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="stat-number">12+</div>
+          <p>Années d'expérience</p>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-number">850+</div>
+          <p>Clients satisfaits</p>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-number">50+</div>
+          <p>Marques représentées</p>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-number">100%</div>
+          <p>Véhicules certifiés</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="values-section">
+    <div class="container">
+      <h2 class="text-center section-title" style="text-align: center !important;">Nos Valeurs</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h4>Excellence</h4>
+            <p>Nous sélectionnons uniquement des véhicules répondant à nos critères d'exigence extrême en matière de qualité et d'entretien.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h4>Transparence</h4>
+            <p>Historique complet, inspections détaillées et prix clairs : nous croyons en des relations clients basées sur la confiance.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h4>Passion</h4>
+            <p>Notre équipe partage une passion commune pour l'automobile qui se ressent à chaque interaction avec nos clients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container">
+      <h2 class="text-center section-title" style="text-align: center !important;">Notre Équipe</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Badr Elhouari" class="team-img">
+            <h4>Badreddine Moussa</h4>
+            <p class="text-muted">Fondateur & CEO</p>
+            <p>Expert automobile avec 15 ans d'expérience dans le luxe et le haut de gamme.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sophie Martin" class="team-img">
+            <h4>Sophie Martin</h4>
+            <p class="text-muted">Directrice Commerciale</p>
+            <p>Spécialiste des relations clients et des négociations sur mesure.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Jean Dupont" class="team-img">
+            <h4>Jean Dupont</h4>
+            <p class="text-muted">Responsable Technique</p>
+            <p>Mécanicien expert certifié par les plus grands constructeurs automobiles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5" style="background: #f8f9fa;">
+    <div class="container text-center py-4">
+      <h2>Prêt à vivre l'expérience AutoLux ?</h2>
+      <p class="lead mb-4">Découvrez notre collection exclusive de véhicules d'exception</p>
+      <a href="catalogue.html" class="btn btn-about mr-3">Voir le catalogue</a>
+      <a href="contact.html" class="btn btn-outline-primary">Nous contacter</a>
+    </div>
+  </section>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section">
+          <h5>Vente de Voitures</h5>
+          <p>Votre concessionnaire premium pour les véhicules de luxe. Nous offrons les meilleures marques avec un
+            service exceptionnel.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h5>Liens Rapides</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">À Propos</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h5>Contact</h5>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue des Champs-Élysées, Paris</li>
+            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+            <li><i class="fas fa-envelope"></i> contact@ventevoitures.com</li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+          <h5>Réseaux Sociaux</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; 2023 Vente de Voitures. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Intégration des fichiers JavaScript Bootstrap (jQuery requis) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

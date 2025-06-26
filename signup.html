@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - AutoLux</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    :root {
+      --primary-blue: hwb(218 27% 8%);
+      --secondary-blue: #04befe;
+    }
+    
+    body {
+      background: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .signup-container {
+      max-width: 1000px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .signup-left {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+      color: white;
+      padding: 3rem;
+    }
+    
+    .signup-left h2 {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    
+    .signup-left ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .signup-left li {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    
+    .signup-left i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+    
+    .signup-right {
+      background: white;
+      padding: 3rem;
+    }
+    
+    .form-control {
+      border-radius: 8px;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+    }
+    
+    .btn-signup {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+      border: none;
+      color: white;
+      padding: 12px;
+      font-weight: 600;
+      border-radius: 8px;
+      width: 100%;
+      transition: all 0.3s;
+    }
+    
+    .btn-signup:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(4, 190, 254, 0.4);
+    }
+    
+    .social-login .btn {
+      border-radius: 8px;
+      padding: 10px;
+      font-weight: 500;
+    }
+    
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #777;
+      margin: 20px 0;
+    }
+    
+    .divider::before, .divider::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .divider::before {
+      margin-right: 10px;
+    }
+    
+    .divider::after {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-image: linear-gradient(-45deg, hwb(218 27% 8%) 0%, #04befe 100%); box-shadow: 0 4px 20px rgba(4, 190, 254, 0.3);">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://images.icon-icons.com/577/PNG/96/ExecutiveCar_Black_icon-icons.com_54904.png" width="40" height="40" class="d-inline-block align-top mr-2" alt="Car Logo">
+      AutoLux
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link px-3 py-2 mx-1 rounded" href="./index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 mx-1 rounded" href="./catalogue.html">Catalogue</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 mx-1 rounded" href="./contact.html">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link px-3 py-2 mx-1 rounded" href="./signup.html">Sign Up</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link px-3 py-2 mx-1 rounded" href="./about.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Navbar (identique à votre demande précédente) -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-image: linear-gradient(-45deg, hwb(218 27% 8%) 0%, #04befe 100%); box-shadow: 0 4px 20px rgba(4, 190, 254, 0.3);">
+    <!-- Votre code navbar ici -->
+  </nav>
+
+  <!-- Signup Section -->
+  <div class="container my-5">
+    <div class="signup-container d-flex flex-wrap">
+      <div class="col-lg-6 signup-left">
+        <h2>Rejoignez AutoLux</h2>
+        <p>Créez un compte pour bénéficier de ces avantages :</p>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Accès à notre catalogue exclusif</li>
+          <li><i class="fas fa-check-circle"></i> Alertes pour les nouvelles arrivages</li>
+          <li><i class="fas fa-check-circle"></i> Historique de vos recherches</li>
+          <li><i class="fas fa-check-circle"></i> Demandes de test drive en ligne</li>
+          <li><i class="fas fa-check-circle"></i> Offres spéciales réservées aux membres</li>
+        </ul>
+        <div class="mt-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/1000/1000957.png" alt="Luxury Car" class="img-fluid" style="max-height: 200px;">
+        </div>
+      </div>
+      
+      <div class="col-lg-6 signup-right">
+        <h3 class="mb-4">Créer un compte</h3>
+        
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">Prénom</label>
+              <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Nom</label>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" class="form-control" id="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" class="form-control" id="password" required>
+            <small class="form-text text-muted">Minimum 8 caractères avec chiffres et lettres</small>
+          </div>
+          
+          <div class="form-group">
+            <label for="confirmPassword">Confirmer le mot de passe</label>
+            <input type="password" class="form-control" id="confirmPassword" required>
+          </div>
+          
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="newsletter">
+            <label class="form-check-label" for="newsletter">Recevoir les offres spéciales par email</label>
+          </div>
+          
+          <button type="submit" class="btn btn-signup mt-3">S'inscrire</button>
+          
+          <div class="divider">OU</div>
+          
+          <div class="social-login text-center">
+            <p class="mb-3">S'inscrire avec</p>
+            <a href="#" class="btn btn-outline-primary mr-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#" class="btn btn-outline-danger"><i class="fab fa-google"></i> Google</a>
+          </div>
+          
+          <p class="text-center mt-4">Vous avez déjà un compte? <a href="#" style="color: var(--secondary-blue);">Connectez-vous</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ <footer>
+    <div class="container">
+      <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section">
+          <h5>Vente de Voitures</h5>
+          <p>Votre concessionnaire premium pour les véhicules de luxe. Nous offrons les meilleures marques avec un
+            service exceptionnel.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h5>Liens Rapides</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">À Propos</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h5>Contact</h5>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue des Champs-Élysées, Paris</li>
+            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+            <li><i class="fas fa-envelope"></i> contact@ventevoitures.com</li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+          <h5>Réseaux Sociaux</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; 2023 Vente de Voitures. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
